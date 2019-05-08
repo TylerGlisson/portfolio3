@@ -5,6 +5,9 @@ This simple and clean portfolio site is meant to provide quick accessible inform
 ## Motivation
 Portfolio sites are commonly used in the job seaking and hiring process.
 
+##View Live
+![tglisson.com](https://www.tglisson.com)
+
 ## Screenshots
 ![Screenshot of Portfolio Site](https://raw.githubusercontent.com/TylerGlisson/portfolio3/master/img/Portfolio%20Screen.png)
 
