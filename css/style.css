@@ -79,6 +79,19 @@ nav {
   .burger {
     display: block;
   }
+  .innerContainer {
+    padding: 0;
+    display: flex;
+  }
+  #who h1 {
+    font-size: 2em;
+  }
+  #who p {
+    display: none;
+  }
+  #who a {
+    display: none;
+  }
 }
 
 /* Animations */
@@ -147,17 +160,8 @@ img.gif {
   font-size: 3.8em;
 }
 #who .innerContainer {
-  /* align-items: center;
-  background-image: url(/img/profilepic1.jpg);
-  background-size: cover;
-  background-position: left;
-  z-index: 10; */
 }
 #who-left {
-
-}
-#who-right {
-  height: 63vh;
 }
 
 /* WHAT SECTION */
