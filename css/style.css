@@ -51,33 +51,8 @@ nav {
   width: 25px;
   height: 2.5px;
   background-color: rgb(187, 187, 187);
-  margin: 6px;
+  margin: 6px;  
   transition: all 0.3s ease;
-}
-
-/* Animations */
-.nav-active {
-  transform: translate(0%);
-}
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translate(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translate(0px);
-  }
-}
-/* burger transform to X */
-.toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-.toggle .line2 {
-  opacity: 0;
-}
-.toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 /* Utility Classes */
@@ -110,19 +85,15 @@ img.gif {
   width: auto;
 }
 
+
 /* WHO SECTION */
 #who {
   background: linear-gradient(rgba(250, 128, 114, 0.952), rgba(250, 128, 114, 0.007)), url(/img/profilepic1.jpg); 
   color: rgba(255, 250, 250, 0.979);
   background-position: center;
-  z-index: 100;
 }
 #who h1 {
   font-size: 3.8em;
-}
-#who .innerContainer {
-}
-#who-left {
 }
 
 /* WHAT SECTION */
@@ -186,7 +157,7 @@ img.gif {
 .contactLinks a:hover {
   color: skyblue;
 }
-
+/* Responsiveness */
 @media screen and (max-width: 990px) {
   .nav-links {
     width: 50%;
@@ -198,8 +169,6 @@ img.gif {
     display: none;
   } 
 }
-
-/* Responsiveness */
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
@@ -228,9 +197,6 @@ img.gif {
     display: flex;
     justify-content: center;
   }
-  #who {
-    /* background: linear-gradient(rgba(250, 128, 114, 0.952), rgba(250, 128, 114, 0.007)), url(/img/profilePortait.png);  */
-  }
   #who h1 {
     font-size: 2.8em;
   }
@@ -240,4 +206,36 @@ img.gif {
   #who a {
     display: none;
   }
+  #what .innerContainer{
+    flex-direction: column;
+  }
 }
+
+
+
+/* Animations */
+.nav-active {
+  transform: translate(0%);
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translate(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+/* burger transform to X */
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
