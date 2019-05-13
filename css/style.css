@@ -55,45 +55,6 @@ nav {
   transition: all 0.3s ease;
 }
 
-/* Responsiveness */
-@media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-  .nav-links {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background: grey;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
-    transform: translate(100%);
-    transition: transform 0.5s ease-in;
-  }
-  .nav-links li{
-    opacity: 0;
-  }
-  .burger {
-    display: block;
-  }
-  .innerContainer {
-    padding: 0;
-    display: flex;
-  }
-  #who h1 {
-    font-size: 2em;
-  }
-  #who p {
-    display: none;
-  }
-  #who a {
-    display: none;
-  }
-}
-
 /* Animations */
 .nav-active {
   transform: translate(0%);
@@ -224,4 +185,59 @@ img.gif {
 }
 .contactLinks a:hover {
   color: skyblue;
+}
+
+@media screen and (max-width: 990px) {
+  .nav-links {
+    width: 50%;
+  }
+  #who p {
+    display: none;
+  }
+  #who a {
+    display: none;
+  } 
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    transform: translate(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li{
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+  .innerContainer {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  #who {
+    /* background: linear-gradient(rgba(250, 128, 114, 0.952), rgba(250, 128, 114, 0.007)), url(/img/profilePortait.png);  */
+  }
+  #who h1 {
+    font-size: 2.8em;
+  }
+  #who p {
+    display: none;
+  }
+  #who a {
+    display: none;
+  }
 }
