@@ -139,6 +139,10 @@ img.gif {
 /* WHO SECTION */
 #who {
   background: salmon;
+  color: rgba(255, 250, 250, 0.884);
+}
+#who h1 {
+  font-size: 2em;
 }
 #who .innerContainer {
   align-items: center;
