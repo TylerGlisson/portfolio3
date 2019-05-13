@@ -138,14 +138,23 @@ img.gif {
 
 /* WHO SECTION */
 #who {
-  background: salmon;
-  color: rgba(255, 250, 250, 0.884);
+  background: linear-gradient(rgba(250, 128, 114, 0.952), rgba(250, 128, 114, 0.007)), url(/img/profilepic1.jpg); 
+  color: rgba(255, 250, 250, 0.979);
+  background-position: center;
+  z-index: 100;
 }
 #who h1 {
-  font-size: 2em;
+  font-size: 3.8em;
 }
 #who .innerContainer {
-  align-items: center;
+  /* align-items: center;
+  background-image: url(/img/profilepic1.jpg);
+  background-size: cover;
+  background-position: left;
+  z-index: 10; */
+}
+#who-left {
+
 }
 #who-right {
   height: 63vh;
