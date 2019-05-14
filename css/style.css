@@ -199,6 +199,10 @@ img.gif {
     display: flex;
     justify-content: center;
   }
+  #who {
+    background: linear-gradient(rgba(250, 128, 114, 0.952), rgba(250, 128, 114, 0.007)), url(/img/profilePortait.png);
+    background-size: cover; 
+  }
   #who h1 {
     font-size: 2.4em;
   }
