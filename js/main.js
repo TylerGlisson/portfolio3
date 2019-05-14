@@ -28,20 +28,3 @@ const navSlide = () => {
 }
 
 navSlide();
-
-// window.addEventListener('DOMContentLoaded', (event) => {
-//   var deviceAgent = navigator.userAgent.toLowerCase();
-//   var agentID = deviceAgent.match(/(iPad|iPhone|iPod)/i);
-//   if (agentID) {       
-//     let scrolling = document.querySelector('body');
-//     scrolling.style.cssText += "'-webkit-overflow-scrolling', 'touch'"; 
-//   }
-// });
-
-$(document).ready(function(){
-  var deviceAgent = navigator.userAgent.toLowerCase();
-  var agentID = deviceAgent.match(/(iPad|iPhone|iPod)/i);
-  if (agentID) {       
-     $('body').css('-webkit-overflow-scrolling', 'touch');
-  }
-});

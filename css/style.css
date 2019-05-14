@@ -2,10 +2,10 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #eee;
+  background-color: salmon;
+  color: white;
   margin: 0px;
   padding: 0px;
-  /* look into border-box more */
   box-sizing: border-box;
   height: 100vh;
 }
@@ -64,60 +64,47 @@ nav {
   scroll-behavior: smooth; 
   scroll-snap-type: y mandatory;
 }
-.innerContainer {
+/* .innerContainer {
   max-width: 1180px; 
   text-align: center;
   margin: 0 auto; 
   padding: 0 3rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 7px;
+  display: flex;
   width: 100vw;
-}
+} */
 section {
   scroll-snap-align: center;  
   padding-top: 25vh;
-  height: 75vh;
-  /* scroll-snap-align: center;   */
+  /* height: 75vh; */
+  text-align: center;
+  margin: 0 auto; 
+  padding: 0 3 rem;
+  display: flex;
+  width: 100vw;
 }
-img.gif {
-  height: 100%;
-  width: auto;
-}
-
 
 /* WHO SECTION */
 #who {
   background: linear-gradient(rgba(250, 128, 114, 0.952), rgba(250, 128, 114, 0.007)), url(/img/profilepic1.jpg); 
   color: rgba(255, 250, 250, 0.979);
   background-position: center;
+  height: 75vh;
 }
 #who h1 {
   font-size: 3.8em;
 }
 
 /* WHAT SECTION */
-#what {
-  background: rgba(138, 129, 129, 0.911);
-}
-#what img {
-  width: 60vw;
-}
-
-/* WORK SECTION */
 #work {
-  background: rgb(85, 150, 123); 
-}
-#work .innerContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  background: rgba(212, 210, 210, 0.911);
+  display: flex;
+  flex-direction: column;
 }
 #work img {
-  width: 60%
+  height: 100px;
 }
 #work a {
   text-decoration: none;
-  color: rgba(19, 18, 18, 0.849);
 }
 #work a:hover {
   color: skyblue;
@@ -127,6 +114,7 @@ img.gif {
 #contact {
   background: salmon;
   color: rgba(0, 0, 0, 0.671);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
