@@ -31,20 +31,21 @@ navSlide();
 
 // Smooth Scrolling from Traversy
 // TODO  Remove jQuery
-$('.cf a').on('click', function(event) {
-  if(this.hash !== '') {
-    event.preventDefault();
+// let 
+// document.querySelector('.cf a').on('click', function(event) {
+//   if(this.hash !== '') {
+//     event.preventDefault();
 
-    const hash = this.hash;
+//     const hash = this.hash;
 
-    $('html, body').animate (
-      {
-        scrollTop: $(hash).offset().top
-      },
-      800,
-      function() {
-        window.location.hash = hash;
-      }
-    );
-  }
-});
+//     document.querySelector('html, body').animate (
+//       {
+//         scrollTop: $(hash).offset().top
+//       },
+//       800,
+//       function() {
+//         window.location.hash = hash;
+//       }
+//     );
+//   }
+// });
