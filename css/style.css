@@ -158,7 +158,7 @@ img.gif {
   color: skyblue;
 }
 /* Responsiveness */
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 990px) and (min-width: 769px) {
   .nav-links {
     width: 50%;
   }
@@ -198,7 +198,7 @@ img.gif {
     justify-content: center;
   }
   #who h1 {
-    font-size: 2.8em;
+    font-size: 2.4em;
   }
   #who p {
     display: none;
